@@ -19,7 +19,9 @@ namespace form_to_form
 
             InitializeComponent();
             
-            if (textBox1.Text != null)
+            textBox1.ReadOnly = true;
+
+            if (textBox1.Text != "")
             {
                 Edit_Button.Enabled = true;
             }
